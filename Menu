@@ -1,0 +1,35 @@
+//Lab7 - function
+#include <iostream>
+using namespace std;
+void menu();	//function declaration
+
+void menu()		//define function
+{
+
+	cout << "		ATM Menu	" << endl << endl;
+	cout << "	1. Cash Withdrawal	" << endl;
+	cout << "	2. Chcek Balance	" << endl;
+	cout << "	3. Transfer to Own Account	" << endl;
+	cout << "	4. Exit	ATM Menu" << endl;
+}
+
+int main()
+{
+	int option;
+		menu();	//function call
+		cout << endl << "Please enter your option" << endl;	//prompt user to choose an option from menu
+		cin >> option;	//read the option
+	
+		switch (option)
+		{
+		case 1:	
+
+		case 2:
+
+		case 3:
+
+		case 4:	
+			break;
+		}
+	return 0;
+}
