@@ -1,0 +1,30 @@
+//Lab7 - function
+#include <iostream>
+using namespace std;
+double km_perGallon(double,double);	//function declaration
+const double GALLON = 0.264179;
+double consumed;
+
+double km_perGallon(double litres,double distance)		//define function	
+{
+	double consumed;
+	consumed = distance / (litres * GALLON);
+	cout << "The number of kilometres per gallon delivered by the car is: " << consumed << endl;
+	return 0;
+	
+	
+}
+
+int main()
+{
+	double litres = 0, distance = 0;
+	double consumed;
+	cout << endl << "Please enter number of litres consumed: " << "\t";
+	cin >> litres;
+	
+	cout << endl << "Please enter number of kilometres travelled: " << "\t" << endl;
+	cin >> distance;
+	
+	km_perGallon(litres, distance);
+	return 0;
+}
