@@ -1,0 +1,29 @@
+//Lab7 - function
+//lab exercise question 2 page 79
+#include <iostream>
+using namespace std;
+void swap(int,int);	//function declaration
+
+void swap(int x,int y)		//define function
+{
+	int temp = 0;
+	temp = x;
+	x = y;
+	y = temp;
+
+	cout << "The swap value of x after swap :" << x << endl;
+	cout << "The swap value of y after swap :" << y << endl;
+	
+}
+
+int main()
+{
+	int x = 10, y = 79;
+	cout << "The original value of x :" << x << endl;
+	cout << "The original value of y :" << y << endl;
+	swap(x,y);
+	//cout << "The value of x after swap :" << x << endl;
+	//cout << "The value of y after swap :" << y << endl;
+	
+	return 0;
+}
